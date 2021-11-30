@@ -1,0 +1,37 @@
+.form {
+  display: flex;
+
+  flex-direction: column;
+
+  width: 400px;
+  padding: 40px 20px;
+
+  background: #fff;
+
+  border-radius: 15px;
+
+  &__error {
+    padding: 10px;
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+    color: #fff;
+
+    background: rgb(225 70 100);
+    border-radius: 5px;
+  }
+
+  &__label {
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    margin-bottom: 15px;
+  }
+
+  &__button {
+    width: 100%;
+  }
+}

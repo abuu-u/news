@@ -1,0 +1,12 @@
+@mixin max-lines($lines-count) {
+  /* stylelint-disable-next-line value-no-vendor-prefix */
+  display: -webkit-box;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines-count;
+
+  word-wrap: break-word;
+}

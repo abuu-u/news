@@ -1,0 +1,53 @@
+.news {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+  gap: 20px;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  &__item {
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  &__link {
+    @include max-lines(2);
+    margin: 0 20px;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    text-align: center;
+
+    transition: all 0.2s;
+
+    &:hover {
+      color: #888;
+    }
+  }
+
+  &__highlighted-text {
+    color: red;
+  }
+
+  &__date {
+    margin: 5px 0;
+
+    font-size: 14px;
+
+    text-align: right;
+  }
+
+  &__text {
+    margin: 0;
+    @include max-lines(5);
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

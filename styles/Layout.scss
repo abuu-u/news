@@ -1,0 +1,46 @@
+.main-header {
+  position: sticky;
+  top: 0;
+
+  width: 100%;
+  margin-bottom: 20px;
+
+  background: #fff;
+
+  border-bottom: 1px solid #eaeaea;
+}
+
+.nav {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  align-items: center;
+
+  justify-items: center;
+
+  &__link {
+    padding: 15px;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    transition: all 0.2s;
+
+    &:hover {
+      color: #ffb82d;
+    }
+
+    &--img {
+      padding: 10px 0;
+    }
+  }
+
+  & > :first-child {
+    justify-self: start;
+  }
+
+  & > :last-child {
+    justify-self: end;
+  }
+}
