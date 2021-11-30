@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react'
 
 const getKeyWordsHighlightedText = (text: string, keyWord?: string) => {
   if (keyWord?.length) {
-    const regexp = new RegExp(keyWord, 'i')
+    const regexp = new RegExp(keyWord, 'ig')
     const texts = text.split(regexp)
     const keyWords = text.match(regexp)
 
