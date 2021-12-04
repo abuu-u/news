@@ -2,7 +2,7 @@ const delay = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(2)
-    }, Math.random() * 2)
+    }, Math.random() * 2000)
   })
 }
 
